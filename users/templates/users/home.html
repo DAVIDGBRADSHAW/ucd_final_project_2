@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGENATIOn FRAMEWORK-PROJECT</title>
+    <link rel="stylesheet" href="add_paginate.css">
+</head>
+<body>
+<div class="logo">
+    <img src="park.jpg" width="50">
+</div>
+<div class="FRAMEWORK-PROJECT">FRAMEWORK-PROJECT<img src="park.jpg" width "50">
+</div>
+{% if is_paginated %} 
+{% if page_obj.has_previous %}  
+ <a class="btn btn-outline-info mb-4"> href="?page=1">First</a>
+ <a class="x" href="?page=1">First</a> {% for post in post%}  
+{% endif %}  
+</div>
+<div class="previous"></div>
+     <a class="x1" href="?page{{ page_obj.previous_page_number}}">PREVIOUS</a>
+{%endif %}
+</div>
+<div class="page1"> {% for post in post%}  
+    {% endfor%}  
+     <a class="x" href="?page=1">First</a> {% for post in post%}  
+     {% endfor%}  
+</div>
+<div class="previous"></div>
+     <a class="x1" href="?page{{ page_obj.previous_page_number}}">PREVIOUS</a>
+     {%endif %}
+</div>
+<br>
+<div class="num">
+     {% for num in page obj.paginator.page_range  %}
+     {% if page obj.number == num%}
+     <a class="btn btn-into mb-4" href="?page={{ num }}"> {{} num }</a>
+      {%elif num > page_obj.number|add: '-5' and num < page_obj.number|add:'5' %}
+     <a class="btn btn-outline-into mb-4" href=?page={{num}}">{{ num}}</a>
+     {% endif%}
+     {% endfor%}
+     {% if page_obj.has_next %}
+    </div>
+    <br>
+    <br>
+    <br>
+<div class="next">
+     <a class="" href="?page={{ page.obj_next_page_number}}"> NEXT</a>
+</div<<>
+<br><br><br>
+<div class="last.html">
+     <a class="btn" href="?page={{ page_obj.pageinator.num_pages}}">LAST</a>
+     {% endif%}
+     {% endif%}
+
+    </div>
+ 

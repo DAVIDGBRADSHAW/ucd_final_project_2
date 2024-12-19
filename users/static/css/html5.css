@@ -1,0 +1,49 @@
+
+/* THIS TO ADD A COMMENT*/
+.inside {color: red;}
+p{color:green;
+	font-size: larger;
+	}
+
+.middle_left, middle_right{
+		color: rgb(230, 110, 74);
+}
+	
+		.outside{
+				color: aqua;
+			}	
+
+.h1 {
+				border-bottom: 2px solid #ff0000; 
+				 background-color: #cccccc;
+				 padding-left:5px;
+				 padding-bottom: 10px;
+				 padding-top: 10px;}
+inline{
+	border: 3px dotted #1bd384;
+	background-color: #cccccc;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+block{
+	border: 3px dotted #d67627;
+	background-color: #cccccc;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+a{
+	border: 3px dotted #ff0000;
+	background-color: #cccccc;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+h2{
+	border: 2px solid #c2c2c2;
+	width: 250px;
+	background-color: #ff0000;
+	padding: 30px 10px 5px 20px;
+}

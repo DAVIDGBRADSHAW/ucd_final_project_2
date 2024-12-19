@@ -1,0 +1,52 @@
+h2 {
+	background-color: aqua;
+	color: #535353;
+		font-family: fantasy;
+		padding-left: 30px;
+		background-image: url(Green.png);}
+	h3 {
+			background-color: aqua;
+			color: #535353;
+				font-family: fantasy;
+				padding-left: 30px;
+	}
+	h4 {
+		background-color: aqua;
+		color: #535353;
+			font-family: fantasy;
+			padding-left: 30px;
+}
+h5{
+	background-color: blue;
+
+	background-position: right;
+	background-size: contain;
+	background-blend-mode: darken;
+	background-position-y: bottom;
+	background-origin: padding-box;
+}		
+
+h6{
+	background-color: rgb(217, 84, 32);
+	
+	background-position: right;
+	background-size: contain;
+	background-blend-mode: darken;
+	background-position-y: bottom;
+	background-origin: padding-box;
+}		
+
+
+h7{
+	background-color: rgb(76, 64, 60);
+	
+	background-position: right;
+	background-size: 100% ;
+	background-blend-mode: darken;
+	background-position-y: bottom;
+	background-origin: padding-box;
+}		
+
+h8{
+	b
+}

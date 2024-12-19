@@ -1,0 +1,4 @@
+body{
+	background: url(d2.png) no-repeat left bottom, url(dave.jpg) no-repeat fixed ; 
+	background-size: 50 100;
+}

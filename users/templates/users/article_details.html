@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        first_name = models.CharField(max_length=30)
+        surnname = models.CharField(max_length=30)
+            Email = models.CharField(max_length=100)
+            ADDRESS_1 = models.CharField(max_length=30)
+            ADDRESS_2 = models.CharField(max_length=30)
+            ADDRESS_3 = models.CharField(max_length=30)
+            ADDRESS_4 = models.CharField(max_length=30)
+            ADDRESS_5 = models.CharField(max_length=30)
+            CODE = models.CharField(max_length=100)
+            WHY= models.TextField()
+            title = models.CharField(max_length=100)
+            date_posted = models.DateTimeField(default=timezone.now)
+            MAILING_LIST = models.ForeignKey(User, on_delete=models.CASCADE)
+            content = models.TextField()
+            date_posted = models.DateTimeField(default=timezone.now)
+            author = models.ForeignKey(User, on_delete=models.CASCADE)
+            title = models.CharField(max_length=100)
+            content = models.TextField()
+            date_posted = models.DateTimeField(default=timezone.now)
+            author = models.ForeignKey(User, on_delete=models.CASCADE)
+        ]
+        
+      </p>      
+    </small>
+<br>
+</body>
+</html>

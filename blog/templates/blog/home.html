@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG HOME</title>
+        {% if title %}
+            <title> Django Blog - {{ title }}</title>
+        {% else %}
+            <title>Django Blog</title>
+        {% endif %}
+        
+    </head>
+
+</head>
+<body>
+    
+        {% for post in posts %}
+            <h1>{{ post.title }}</h1>
+            <p>By {{ post.author }} on {{ post.date_posted }}</p>
+            <p>{{ post.content}}</p>
+        {% endfor %}
+    <br>
+    <hr>
+    <br>
+
+
+
+
+
+        <h1>Blog Home!</h1>
+<br>
+<hr>
+<br>
+
+def home(request):
+    context = {
+        'posts': posts
+    }
+    return render(request, 'blog/home.html', context)
+<br>
+<hr>
+<br>
+
+{% extends "blog/base.html" %}
+	{% block content %}
+		{% for post in posts %}
+			<article class="media content-section">
+    <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}"> <!--Change here-->
+    <div class="media-body">
+        <div class="article-metadata">
+            <a class="mr-2" href="#">{{ post.author }}</a>
+            <small class="text-muted">{{ post.date_posted|date:'dS, F, Y' }}</small>
+        </div>
+        <!-- <h2><a class="article-title" href="#">{{ post.title }}</a></h2> -->
+        <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
+        <p class="article-content">{{ post.content }}</p>
+    </div>
+		</article>
+	{% endfor %}
+{% endblock content %}
+<br>
+<br>
+<hr>
+<br>
+<h1> dave bradshaw  FIRST NAME ETC</h1>
+{% for post in object_list %}
+	<li>
+		<a href="{% url 'article-detail' %} post.pk"
+		{{ post.title}} - {{post.author}} {{}}<br>
+		<br>
+{{post.first_name}}, <br>{{post.surname}} 
+<br><br>
+{{post.email}} 
+<br><br>
+{{post.ADDRESS_1}}<br><br>
+{{post.ADDRESS_2}}<br><br>
+
+{{post.ADDRESS_3}}<br><br> 
+{{post.ADDRESS_4}}<br><br> 
+{{post.ADDRESS_5}}<br><br>
+{{post.code}}<br><br>
+
+{{post.why}}<br><br> 
+{{post.MAILING_LIST}}</li>
+{% endfor%} 
+<div class="">
+	<a href="submit">SUBMIT</a>
+
+</div>
+
+  
+</body>
+</html>

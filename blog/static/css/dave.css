@@ -1,0 +1,18 @@
+	#main { 
+			height: 250px; 
+			width: 600px; 
+			background-color: rgb(36, 1, 1); 
+			background-image: radial-gradient(#090, #fff, #083fc2); 
+		} 
+
+		.dave { 
+			text-align: center; 
+			font-size: 40px; 
+			font-weight: bold; 
+			padding-top: 80px; 
+		} 
+
+		.david { 
+			font-size: 17px; 
+			text-align: center; 
+		} 
